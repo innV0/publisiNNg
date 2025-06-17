@@ -1,6 +1,6 @@
 # Developer Specification
 
-This repository follows the *site-md-tailwind* project outlined in `README.md`.
+This repository follows the *publishinng* project outlined in `README.md`.
 It uses Node.js with ESM modules.
 
 - Markdown in `docs/` is transformed to HTML with a common template.
