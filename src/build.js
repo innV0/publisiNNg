@@ -43,6 +43,7 @@ async function build() {
 
   await fs.mkdir(publicDir, { recursive: true });
   await fs.cp(path.join(root, 'assets'), path.join(publicDir, 'assets'), { recursive: true });
+  await fs.copyFile(path.join(root, 'src', 'client.js'), path.join(publicDir, 'client.js'));
 
   const files = await globby('*.md', { cwd: docsDir });
   const template = await fs.readFile(templatePath, 'utf8');

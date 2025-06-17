@@ -18,3 +18,11 @@ npm run tailwind # generate public/styles.css
 ```
 
 The generated files appear in `public/` and can be deployed to any static host.
+
+### Client-rendered mode
+
+If you prefer to skip the build step you can serve the Markdown files directly.
+`client.js` runs in the browser, fetches the `.md` documents from `docs/` and
+converts them on the fly using Unified. Simply host the repository as-is and
+open `src/template.html` (or any generated page). The script will inject the
+HTML inside `#content`.
